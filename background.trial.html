@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/background.trial.css">
+	<script type="text/javascript" src="js/background.trial.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+    <!--top navbar fixed-->
+      <div id="navbar">
+        <div id="nav">
+            <a href="game/index.html" style="color: #bcbcbc">Game</a>
+            <div><img src="earth.png"></div>
+            <a href="events.html" style="color: #bcbcbc">App</a>
+        </div>
+
+    </div>
+<br><br>
+<
+
+
+<br>
+<br>
+
+<div>
+
+<div class="wrapper">
+
+<div id="text" class="skills">
+<ul>
+<li>
+<div class="responsive-circle">
+  
+  <div class="circle-inner"><h8 id="fontt">3R</h8></div>
+</div>
+</li>
+
+
+
+</div>
+
+<h1 id ="tagline">THINK GLOBALLY,ACT LOCALLY!!</h1>
+
+</div>
+
+
+  <script>
+    
+jQuery(document).ready(function($){
+  
+  $('#text').on('click', function(){
+    $("ul.cards-split-delay").toggleClass('transition');
+  });
+});
+ </script>
+
+
+
+<!--particle js-->
+
+<div id="particle"></div>
+<div id="overlay"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+<!--particle js script-->
+<script>
+	
+
+var options = {"particles":{"number":{"value":99,"density":{"enable":true,"value_area":552.4033491425909}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":3},"image":{"src":"img/github.svg","width":70,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1.5782952832645452,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":false};
+particlesJS("particle", options);
+
+
+
+
+
+</script>
+
+
+
+<!--gears--js-->
+<script>
+	    var offset = 0.0;
+    function draw() { 
+      StyleKitName.clearCanvas('gears');
+      StyleKitName.drawGears('gears', offset);
+    }
+    var tid = setInterval(loop, 40);
+    var canvas = document.getElementById("gears");
+    var context = canvas.getContext("2d");
+    function loop() {
+      offset += 1;
+      draw();
+    }
+  </script>
+  <script>
+  	  $(document).ready(function() {
+	    $(".lettering").lettering();
+	  });
+  </script>
+
+<!--gears html-->
+
+  <canvas id="gears" width="900" height="900"></canvas>
+ <!-- fog animation --> 
+  <section class="fog">
+  
+  <div class="fog__container">
+    <div class="fog__img fog__img--first"></div>
+    <div class="fog__img fog__img--second"></div>
+  </div>
+</section>
+
+
+<ul class="cards-split-delay">
+  
+  <li class="card card-1"><div class="content" data-toggle="modal" data-target=".bd-example-modal-lg">
+   
+      
+      <img class="card-image" id="pic" src="donate1.jpg">
+      
+      <div class="card-footer">
+   
+        <h1 class="card-title"><h3>We make a living by what we get, but we make a life by what we give. </h3>
+         
+        <p class="card-text"></p>
+       
+      </div></div>
+   
+</li>
+  <li class="card card-2"><img id="pic" src="donate2.jpeg"/>
+    <div class="content">
+      <h3>Giving is not just about make a donation, it’s about making a difference.</h3>
+     
+    </div>
+  </li>
+  <li class="card card-3"><img id="pic" src="recycle.jpg" />
+    <div class="content">
+      <h3>Convert waste into wealth, don't convert wealth into waste...</h3>
+
+    </div>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+</body>
+</html>
